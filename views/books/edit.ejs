@@ -1,0 +1,9 @@
+<form action="/books/<%= book._id %>?_method=PUT" method="POST">
+    <label>Title: <input type="text" name="title" value="<%= book.title %>" required></label>
+    <label>Author: <input type="text" name="author" value="<%= book.author %>"></label>
+    <label>Genre: <input type="text" name="genre" value="<%= book.genre %>"></label>
+    <label>Published Year: <input type="number" name="publishedYear" value="<%= book.publishedYear %>"></label>
+    <label>Description: <textarea name="description"><%= book.description %></textarea></label>
+    <button type="submit">Update Book</button>
+  </form>
+  
